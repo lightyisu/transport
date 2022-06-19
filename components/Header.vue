@@ -20,20 +20,45 @@
         <el-submenu index="2">
           <template slot="title">国际快递</template>
           <el-menu-item index="2-1">
-             <Nuxt-link to="/service/dwadwa">
+             <Nuxt-link to="/service/dhl_express">
+
              DHL快递
           </Nuxt-link>
            </el-menu-item>
-          <el-menu-item index="2-2">UPS国际快递</el-menu-item>
-          <el-menu-item index="2-3">FedEX国际快递</el-menu-item>
+          <el-menu-item index="2-2">
+             <Nuxt-link to="/service/ups_express">
+
+             UPS国际快递
+          </Nuxt-link></el-menu-item>
+          <el-menu-item index="2-3">
+            <Nuxt-link to="/service/fed_express">
+
+             FedEX国际快递
+          </Nuxt-link></el-menu-item>
         </el-submenu>
           <el-submenu index="3">
           <template slot="title">国际专线</template>
-          <el-menu-item index="2-1">中欧铁路</el-menu-item>
-          <el-menu-item index="2-2">澳洲专线</el-menu-item>
-          <el-menu-item index="2-3">中东专线</el-menu-item>
-            <el-menu-item index="2-4">电池专线</el-menu-item>
-          <el-menu-item index="2-5">化工品专线</el-menu-item>
+          <el-menu-item index="2-1">
+            <Nuxt-link to="/line/cneu">
+
+             中欧铁路
+          </Nuxt-link></el-menu-item>
+          <el-menu-item index="2-2">  <Nuxt-link to="/line/aozhou">
+
+             澳洲专线
+          </Nuxt-link></el-menu-item>
+          <el-menu-item index="2-3"><Nuxt-link to="/line/zhongdong">
+
+             中东专线
+          </Nuxt-link></el-menu-item>
+            <el-menu-item index="2-4"><Nuxt-link to="/line/dianchi">
+
+             电池专线
+          </Nuxt-link></el-menu-item>
+          <el-menu-item index="2-5"><Nuxt-link to="/line/huaxue">
+
+             化工品专线
+          </Nuxt-link></el-menu-item>
         </el-submenu>
             <el-submenu index="4">
           <template slot="title">亚马逊FBA</template>
@@ -55,7 +80,9 @@
         <el-menu-item index="5"><Nuxt-link to="/news/lists">
             新闻中心
           </Nuxt-link></el-menu-item>
-        <el-menu-item index="6">关于我们</el-menu-item>
+        <el-menu-item index="6"><Nuxt-link to="/contact">
+            关于我们
+          </Nuxt-link></el-menu-item>
        
       
       </el-menu>
@@ -74,6 +101,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+::v-deep .el-menu--horizontal>.el-submenu.is-active .el-submenu__title{
+  border: none;
+}
+
+.el-menu--horizontal>.el-menu-item{
+  border: none;
+}
+::v-deep .el-menu--horizontal{
+  border: none;
+}
+.el-menu--horizontal>.el-menu-item.is-active{
+  border: none;
+}
 .text{
   font-size: 23px;
   font-weight: bold;
@@ -100,5 +140,9 @@ export default {
     margin-left: auto;
     margin-right: 70px;
   }
+}
+a{
+  text-decoration: none;
+  color: gray;
 }
 </style>

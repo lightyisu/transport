@@ -10,7 +10,7 @@
         height="480px"
       >
         <el-carousel-item v-for="item in carouselImg" :key="item">
-          <img class="carousel_img" :src="item" />
+          <img class="carousel_img" :src='item' />
         </el-carousel-item>
       </el-carousel>
       <div class="service">
@@ -43,7 +43,7 @@
         <div class="item p1">
           <div class="img-wrapper">
             <img
-              src="http://12448.aly17.demo3w.com/upload/20190531141817.png"
+              src="~/assets/i1.png"
             />
           </div>
 
@@ -54,7 +54,7 @@
         </div>
         <div class="item p2">
           <div class="img-wrapper">
-            <img src="http://www.szjunyue56.com/upload/20190531141759.png" />
+            <img src="~/assets/i2.png"/>
           </div>
 
           <div class="text">
@@ -64,7 +64,7 @@
         </div>
         <div class="item p3">
           <div class="img-wrapper">
-            <img src="http://www.szjunyue56.com/upload/20190531141742.png" />
+            <img src="~/assets/i3.png"/>
           </div>
 
           <div class="text">
@@ -74,7 +74,7 @@
         </div>
         <div class="item p4">
           <div class="img-wrapper">
-            <img src="http://www.szjunyue56.com/upload/20190531141724.png" />
+            <img src="~/assets/i4.png"/>
           </div>
 
           <div class="text">
@@ -86,7 +86,7 @@
         </div>
         <div class="item p5">
           <div class="img-wrapper">
-            <img src="http://www.szjunyue56.com/upload/20190531141706.png" />
+            <img src="~/assets/i5.png" />
           </div>
 
           <div class="text">
@@ -99,7 +99,7 @@
         <div class="item p6">
           <div class="img-wrapper">
             <img
-              src="http://12448.aly17.demo3w.com/upload/20190531141817.png"
+              src="~/assets/i6.png"
             />
           </div>
 
@@ -115,22 +115,79 @@
           服务流程
         </h3>
         <div class="process_card" data-aos="fade-up" data-aos-duration="1000">
-          <div class="process_wrapper" v-for="o in 6" :key="o">
+          <div class="process_wrapper" >
             <el-card style="width: 200px" shadow="hover" class="box-card">
               <div class="text item">
                 <img
-                  src="http://12448.aly17.demo3w.com/upload/20190531142449150.png"
+                  src="~/assets/r1.png"
                 />
                 <p>收货、分拣、包装</p>
               </div>
             </el-card>
-            <span v-if="o != 6" class="arrow"></span>
+            <span  class="arrow"></span>
           </div>
+            <div class="process_wrapper" >
+            <el-card style="width: 200px" shadow="hover" class="box-card">
+              <div class="text item">
+                <img
+                  src="~/assets/r2.png"
+                />
+                <p>交付运输公司</p>
+              </div>
+            </el-card>
+            <span  class="arrow"></span>
+          </div>
+            <div class="process_wrapper" >
+            <el-card style="width: 200px" shadow="hover" class="box-card">
+              <div class="text item">
+                <img
+                  src="~/assets/r3.png"
+                />
+                <p>
+海、空运至目的地</p>
+              </div>
+            </el-card>
+            <span  class="arrow"></span>
+          </div>
+            <div class="process_wrapper" >
+            <el-card style="width: 200px" shadow="hover" class="box-card">
+              <div class="text item">
+                <img
+                  src="~/assets/r4.png"
+                />
+                <p>目的地清关</p>
+              </div>
+            </el-card>
+            <span  class="arrow"></span>
+          </div>
+            <div class="process_wrapper" >
+            <el-card style="width: 200px" shadow="hover" class="box-card">
+              <div class="text item">
+                <img
+                  src="~/assets/r6.png"
+                />
+                <p>转至承运商</p>
+              </div>
+            </el-card>
+            <span  class="arrow"></span>
+          </div>
+            <div class="process_wrapper" >
+            <el-card style="width: 200px" shadow="hover" class="box-card">
+              <div class="text item">
+                <img
+                  src="~/assets/r7.png"
+                />
+                <p>承运商派送</p>
+              </div>
+            </el-card>
+     
+          </div>
+          
         </div>
       </div>
       <div data-aos="fade-up" data-aos-duration="1000" class="info3">
         <div class="text">
-          <h2 data-aos="fade-up" data-aos-duration="1000">君悦国际货运代理</h2>
+          <h2 data-aos="fade-up" data-aos-duration="1000">运通佳和货运代理</h2>
           <p>
             专业从事第三方综合物流服务的运营商，以成为"全球化供应链管理公司"为战略目标
           </p>
@@ -147,7 +204,7 @@
           :body-style="{ padding: '0px' }"
         >
           <img
-            src="http://12448.aly17.demo3w.com/upload/20190611095004.jpg"
+            src="~/assets/img2.jpg"
             class="image"
           />
           <div style="padding: 14px">
@@ -169,7 +226,7 @@
         <p>OTHER ADVANTAGES</p>
         <div class="item p1">
           <div class="img-wrapper">
-            <img src="http://www.szjunyue56.com/upload/20190531144546.png" />
+            <img src="~/assets/i7.png"/>
           </div>
 
           <div class="text">
@@ -179,7 +236,7 @@
         </div>
           <div class="item p2">
           <div class="img-wrapper">
-            <img src="http://www.szjunyue56.com/upload/20190531144511.png" />
+            <img src="~/assets/i8.png" />
           </div>
 
           <div class="text">
@@ -234,25 +291,27 @@ export default Vue.extend({
       fits: ["fill", "contain", "cover", "none", "scale-down"],
       url: "../assets/img1.jpg",
       carouselImg: [
-        "http://www.szjunyue56.com/upload/img/20190603111643.jpg",
-        "http://www.szjunyue56.com/upload/img/20190731115430.jpg",
-        "http://www.szjunyue56.com/upload/img/20190603111639.jpg",
+        "/banner1.jpg",
+        "/banner2.jpg",
+       "/banner3.jpg",
+        "/banner4.jpg",
       ],
       info6:{
         carousel:[
-          {img:'http://www.szjunyue56.com/upload/20190603124450.jpg',title:'发欧洲FBA头程要谨防FBA拒收',desc:'除了清关查验、物流丢包等不可控因素，还要谨防被FBA拒收，发生查验延迟和丢包还可以找货代赔偿，被FBA拒收，基本上就要卖家自己掏腰包了，为此，卖家在打包发货时一定要谨慎。'},
+          {img:'/c1.jpg',title:'发欧洲FBA头程要谨防FBA拒收',desc:'除了清关查验、物流丢包等不可控因素，还要谨防被FBA拒收，发生查验延迟和丢包还可以找货代赔偿，被FBA拒收，基本上就要卖家自己掏腰包了，为此，卖家在打包发货时一定要谨慎。'},
           {
-            img:'http://www.szjunyue56.com/upload/20190603124441.jpg',
+            img:'c2.jpg',
             title:'亚马逊FBA对这些卖家免收月度仓储费和移除费',
             desc:'亚马逊FBA对这些卖家免收月度仓储费和移除费'
           },
           {
-            img:'http://www.szjunyue56.com/upload/20190603124432.jpg',
+            img:'/c3.jpg',
             title:'中欧班列累计开行超1.4万列',
             desc:'中欧班列累计开行超1.4万列'
           }
         ]
-      }
+      },
+    
     };
   },
   mounted() {
@@ -351,7 +410,7 @@ footer {
       }
     }
 
-    background: url("http://12448.aly17.demo3w.com/images/yousitem.png");
+    background: url("~/assets/yousitem.png");
 
     height: 130px;
     background-repeat: no-repeat;
@@ -376,7 +435,7 @@ footer {
   background-size: 100%;
   width: 100%;
   margin: 40px 0;
-  background: url("http://12448.aly17.demo3w.com/images/patent.jpg");
+  background: url("~/assets/patent.jpg");
 }
 .info4 {
   display: flex;
@@ -424,7 +483,7 @@ footer {
   width: 100%;
   color: #fff;
   height: 220px;
-  background: url("http://12448.aly17.demo3w.com/images/xunpan.jpg");
+  background: url("~/assets/xunpan.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   text-align: center;
@@ -450,9 +509,13 @@ footer {
   height: 500px;
   .process_wrapper {
     display: flex;
+    img{
+      width: 70px;
+     height: 70px;
+    }
   }
   .arrow {
-    background: url("http://www.szjunyue56.com/images/jtou.png") no-repeat
+    background: url("~/assets/jtou.png") no-repeat
       center;
 
     line-height: 171px;
@@ -526,7 +589,7 @@ footer {
       margin-left: 150px;
     }
 
-    background: url("http://12448.aly17.demo3w.com/images/yousitem.png");
+    background: url("~/assets/yousitem.png");
 
     height: 130px;
     background-repeat: no-repeat;
@@ -539,7 +602,7 @@ footer {
     position: absolute;
     top: 30%;
     left: 38%;
-    background: url("http://12448.aly17.demo3w.com/images/bieshu.png");
+    background: url("~/assets/center.png");
     height: 320px;
     background-size: 100% 100%;
   }
