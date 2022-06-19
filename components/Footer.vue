@@ -2,34 +2,36 @@
   <div class="footer">
     <div class="links">
       <span class="title">友情链接:</span>
-      <span class="small">腾讯网</span>
+      <span class="small">XX网</span>
       <div class="clear"></div>
       <hr />
     </div>
     <div class="below_content">
       <div class="about">
         <ul>
-          <li>关于我们</li>
+          <nuxt-link to="/contact">
+             <li>关于我们</li>
+          </nuxt-link>
+         
           <li>公司简介</li>
-          <li>人才招聘</li>
+          <li>公司资质</li>
+            <li>联系我们</li>
         </ul>
         <ul>
-          <li>服务项目</li>
-          <li>墨西哥FBA空运</li>
-          <li>墨西哥海运</li>
-          <li>墨西哥FBA空运</li>
-          <li>墨西哥海运</li>
+          <li>国际快递</li>
+          <li>DHL国际快递</li>
+            <li>UPS国际快递</li>
+            <li>FedEx国际快递</li>
+          
         </ul>
         <ul>
-          <li>新闻中心</li>
-          <li>墨西哥FBA空运</li>
-          <li>墨西哥海运</li>
-          <li>墨西哥FBA空运</li>
-          <li>墨西哥海运</li>
+          <li>国际专线</li>
+          <li>中欧铁路</li>
+          <li>中东专线</li>
+          <li>电池专线</li>
+          <li>化工品专线</li>
         </ul>
-        <ul>
-          <li>在线留言</li>
-        </ul>
+      
       </div>
       <div class="info">
         <p>电话</p>

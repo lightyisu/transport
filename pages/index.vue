@@ -192,7 +192,19 @@
             专业从事第三方综合物流服务的运营商，以成为"全球化供应链管理公司"为战略目标
           </p>
         </div>
-        <el-button type="success" round>在线咨询</el-button>
+        
+  <el-popover
+    placement="bottom-start"
+    
+    width="200"
+    trigger="click"
+>
+     <template #reference>
+           <el-button  slot="reference" type="success" round>在线咨询</el-button>
+      </template>
+    <img src="~/assets/wexin.png" width="100%" />
+  </el-popover>
+        
       </div>
       <div class="info4">
         <el-card
@@ -608,6 +620,8 @@ footer {
   }
 }
 .wrapper {
+  min-width: 1200px;
+  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

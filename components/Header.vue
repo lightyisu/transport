@@ -61,19 +61,44 @@
           </Nuxt-link></el-menu-item>
         </el-submenu>
             <el-submenu index="4">
-          <template slot="title">亚马逊FBA</template>
-          <el-menu-item index="2-1">欧洲FBA</el-menu-item>
-          <el-menu-item index="2-2">美国FBA</el-menu-item>
-          <el-menu-item index="2-3">澳洲FBA</el-menu-item>
-            <el-menu-item index="2-4">亚马逊FBA</el-menu-item>
+          <template slot="title">
+            亚马逊FBA</template>
+          <el-menu-item index="2-1"><Nuxt-link to="/FBA/eufba">
+
+             欧洲FBA
+          </Nuxt-link></el-menu-item>
+          <el-menu-item index="2-2"><Nuxt-link to="/FBA/usfba">
+
+             美国FBA
+          </Nuxt-link></el-menu-item>
+          <el-menu-item index="2-3"><Nuxt-link to="/FBA/aufba">
+
+             澳洲FBA
+          </Nuxt-link></el-menu-item>
+            <el-menu-item index="2-4"><Nuxt-link to="/FBA/amazon">
+
+             亚马逊FBA
+          </Nuxt-link></el-menu-item>
      
         </el-submenu>
            <el-submenu index="5">
           <template slot="title">空运海派</template>
-          <el-menu-item index="2-1">加拿大海运</el-menu-item>
-          <el-menu-item index="2-2">美国海运</el-menu-item>
-          <el-menu-item index="2-3">欧洲海运</el-menu-item>
-            <el-menu-item index="2-4">欧洲空运</el-menu-item>
+          <el-menu-item index="2-1"><Nuxt-link to="/ship/ca">
+
+             加拿大海运
+          </Nuxt-link></el-menu-item>
+          <el-menu-item index="2-2"><Nuxt-link to="/ship/us">
+
+             美国海运
+          </Nuxt-link></el-menu-item>
+          <el-menu-item index="2-3"><Nuxt-link to="/ship/eu">
+
+             欧洲海运
+          </Nuxt-link></el-menu-item>
+            <el-menu-item index="2-4"><Nuxt-link to="/ship/eu_air">
+
+             欧洲空运
+          </Nuxt-link></el-menu-item>
      
         </el-submenu>
         
